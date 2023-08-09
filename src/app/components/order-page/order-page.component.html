@@ -1,0 +1,79 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 mt-5">
+      <div class="card border-0 shadow p-3">
+        <div class="form-floating mb-3 text-center">
+          <h5 class="text-center text-warning">Choose your Order</h5>
+        </div>
+        <div class="form-floating mb-3"><h6>Vegan type</h6>
+          <select [(ngModel)]="vegetarian" class="form-select">
+            <option value="">Select your vegantype</option>
+            <option *ngFor="let v of veganTypes" value="{{ v }}">{{ v }}</option>
+          </select>
+        </div>
+        <div class="form-floating mb-3"><h6>Pizza type</h6>
+          <select [(ngModel)]="name" class="form-select">
+            <option value="">Select your Pizza</option>
+            <option *ngFor="let ve of vegPizzas" value="{{ ve.name }}">{{ ve.name }}</option>
+          </select>
+        </div>
+        <div class="form-floating mb-3"><h6>Description</h6>
+          <select [(ngModel)]="description" class="form-select">
+            <option value="">Select your description</option>
+            <option *ngFor="let d of vegPizzas" value="{{ d.description }}">{{ d.description }}</option>
+          </select>
+        </div>
+        <div class="form-floating mb-3"><h6>Price</h6>
+          <select [(ngModel)]="price" class="form-select">
+            <option value="">Price range</option>
+            <option *ngFor="let p of vegPizzas" value="{{ p.price }}">{{ p.price }}</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-outline-success" (click)="addItem('add')">Add Item</button>
+        <button type="button" class="btn btn-outline-warning" (click)="addItem('update')">Update Item</button>
+      </div>
+    </div>
+    <div class="col-md-8 mt-2">
+      <h5 class="text-danger">Item List</h5>
+      <div class="card p-3 shadow">
+        <div class="card-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Vegan Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of itemList">
+                <td>{{ item.vegetarian }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.price }}</td>
+                <td>{{ item.description }}</td>
+                <td>
+                  <a (click)="updateItem(item)" class="btn btn-outline-warning"
+                    ><i class="far fa-edit"></i
+                  ></a>
+                </td>
+                <td>
+                  <a (click)="deleteItem(item)" class="btn btn-outline-danger"
+                    ><i class="fa fa-trash"></i
+                  ></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="margin-left: 45%">
+  <button class="btn btn-success">
+    <a href="/home" style="color: white; align-items: center">back to Home</a>
+  </button>
+</div>

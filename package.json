@@ -1,0 +1,47 @@
+{
+  "name": "student-management",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^16.0.0",
+    "@angular/common": "^16.0.0",
+    "@angular/compiler": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "@angular/fire": "^7.6.1",
+    "@angular/forms": "^16.0.0",
+    "@angular/platform-browser": "^16.0.0",
+    "@angular/platform-browser-dynamic": "^16.0.0",
+    "@angular/router": "^16.0.0",
+    "@angular/service-worker": "^16.0.0",
+    "firebase": "^9.23.0",
+    "git": "^0.1.5",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/architect": ">= 0.900 < 0.1300",
+    "@angular-devkit/build-angular": "^16.0.4",
+    "@angular/cli": "^16.1.6",
+    "@angular/compiler-cli": "^16.0.0",
+    "@types/jasmine": "~4.3.0",
+    "firebase-tools": "^12.4.6",
+    "fuzzy": "^0.1.3",
+    "inquirer": "^6.2.2",
+    "inquirer-autocomplete-prompt": "^1.0.1",
+    "jasmine-core": "~4.6.0",
+    "jsonc-parser": "^3.0.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "open": "^7.0.3",
+    "typescript": "~5.0.2"
+  }
+}

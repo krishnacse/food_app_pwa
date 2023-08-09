@@ -1,0 +1,59 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <header>
+    <h1 id="top1">FoodShop</h1>
+  </header>
+  <hr />
+  <nav id="navbar" class="navbar">
+    <ul id="navcontent">
+      <li><a href="#">Food Delivery</a></li>
+      <li><a href="/order">Make Order</a></li>
+      <li>
+        <a (click)="subscribeToNotifications()"
+          ><i class="fa fa-bell" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+  </nav>
+  <div id="container1">
+    <div id="welcome">Welcome to Online FoodShop</div>
+    <button class="btn btn-success"><a href="/order">ORDER NOW!</a></button
+    ><img class="arrow-image" src="./../assets/arrow.gif" />
+  </div>
+  <div class="row">
+    <div class="card sm-6" style="max-width: 400px">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="./../../../assets/pizza1.jfif" class="card-img" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ pizzas[0].name }}</h5>
+            <p class="card-text">{{ pizzas[0].description }}</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <button class="btn btn-success"><a href="/cart">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card sm-6" style="max-width: 400px">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="./../../../assets/pizza2.jfif" class="card-img" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ pizzas[1].name }}</h5>
+            <p class="card-text">{{ pizzas[1].description }}</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <button class="btn btn-success"><a href="/cart">Add to Cart</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

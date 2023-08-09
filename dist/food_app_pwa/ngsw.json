@@ -1,0 +1,118 @@
+{
+  "configVersion": 1,
+  "timestamp": 1691599689864,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/29.97764731a8928952.js",
+        "/favicon.ico",
+        "/firebase-messaging-sw.js",
+        "/index.html",
+        "/main.9f160c4a4f142168.js",
+        "/manifest.webmanifest",
+        "/polyfills.e49fe7dfa907aa7f.js",
+        "/runtime.70edc7feca0c4d0d.js",
+        "/styles.ef46db3751d8e999.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/20230806_163321.heic",
+        "/assets/20230806_163322.heic",
+        "/assets/20230806_164638.heic",
+        "/assets/arrow.gif",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/icons8-google-48.png",
+        "/assets/pizza1.jfif",
+        "/assets/pizza2.jfif",
+        "/assets/pizza3.jfif",
+        "/assets/under-construction.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "appfreshness1",
+      "patterns": [
+        "https:\\/\\/jsonplaceholder\\.typicode\\.com\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 10000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/29.97764731a8928952.js": "a25457b559a1e8e617f43eace34a9107a775337a",
+    "/assets/20230806_163321.heic": "b65a33ac69197d04eaec1f1f19b6e19ba848280a",
+    "/assets/20230806_163322.heic": "ac08cdc6d8fff588cf2bcb9096febb706bc279ca",
+    "/assets/20230806_164638.heic": "88719229adf7b9ba3136885b2084f65873973fd6",
+    "/assets/arrow.gif": "6c4c99805ce3e822a1e98aed27a17c34c5d12b03",
+    "/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/assets/icons8-google-48.png": "57710cdb0d74ee6e80d906349344920e6768d79d",
+    "/assets/pizza1.jfif": "7c38986e63415fbcbd6a4de1859f807835d33c40",
+    "/assets/pizza2.jfif": "339c2ab8344317f7d3fd519e7aef60c2fb55efe0",
+    "/assets/pizza3.jfif": "4053fbac1bbba58f41394e61063ce4182f2fae17",
+    "/assets/under-construction.png": "fc9f2911592bc00d768be98b777a70d27bace0a4",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/firebase-messaging-sw.js": "f6f315fa9ed5fcabde8dd80fd813b7ec1c536dec",
+    "/index.html": "9407d8f3f07d48ec7222bafee07f882b86daa2bb",
+    "/main.9f160c4a4f142168.js": "d8fef9ee0a8b9046f0e3f17ef95ccc9254184654",
+    "/manifest.webmanifest": "1499261fe7bbbe6b7af48279e206ed68b505e309",
+    "/polyfills.e49fe7dfa907aa7f.js": "9519368727788fb855ed3c3e613103fd3dec293b",
+    "/runtime.70edc7feca0c4d0d.js": "78ccf0263b75207c24d50de597ae0e1c8e063534",
+    "/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
